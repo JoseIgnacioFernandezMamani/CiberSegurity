@@ -1,0 +1,204 @@
+# Introducción a la ciberseguridad
+
+## El mundo cibernetico
+
+El mundo cibernético es un gran conjunto de datos generados por usuarios, recopilados por diferentes plataformas diariamente. Estos datos contienen una amplia gama de información sobre el comportamiento del usuario. Los datos recopilados son utilizados por empresas, organizaciones y naciones con diferentes fines.
+
+## Big data
+
+Manejo de un conjunto extremadamente grande de datos, permite el análisis profundo para mejorar la detección de amenazas y respuesta contra incidentes.
+
+## IoT (Internet of Things)
+
+Todos los dispositivos físicos conectados a internet, que recopilan, envían y reciben datos, la seguridad de la IoT se basa en la protección de las redes y los datos transmitidos entre ellos.
+
+## AI (Artificial Intelligence)
+
+La Inteligencia Artificial es el uso de técnicas para simular el proceso de razonamiento humano. En el entorno de ciberseguridad, analiza patrones y comportamientos de datos para detectar amenazas e identificar actividades sospechosas o maliciosas. Su objetivo es ofrecer respuestas automatizadas y rápidas a incidentes de seguridad.
+
+## Ataques informaticos destacables de la historia
+
+- Wanna Cry
+    
+    Cifrado de sistemas operativos con la espera de rescate.
+    
+- Karbanak
+    
+    Robo de 1.000 millones de dolarea contra un banco 
+    
+- Stuxnet
+    
+    Destruccion de las centrifugadoras nucleares de iran 
+    
+- Exploits
+    
+    Secuencia de scripts diseñados para aprovecharse de las vulnerabilidades de seguridad de un sistema.
+    
+- GSMem
+    
+    Malware que transmite señales electomagneticas dentro de las señales GSM moviles.
+    
+- AirHooper
+    
+    Emisión de radiofrecuencias para robo de datos sensibles a dispositivos que no están conectados a la misma red que el dispositivo atacante.
+    
+    ### La seguridad absoluta de datos es practicamente imposible.
+    
+
+> "El único sistema completamente seguro es aquel que está apagado, encerrado en un bloque de cemento, sellado en una habitación rodeada de alambradas y guardias armados. Y aún así, tengo mis dudas." - Gene Spafford profesor de Informática en la Universidad Purdue.
+> 
+
+> “Se tardan 20 años en construir una reputación y cinco minutos en arruinarla. Si piensas sobre ello, harás las cosas de diferente manera” -Warren Buffet, empresario e inversor.
+> 
+
+> Si piensas que la tecnología puede solucionar tus problemas de seguridad, está claro que ni entiendes los problemas ni entiendes la tecnología” - Bruce Schneier, criptógrafo y experto en seguridad informatica.
+> 
+
+> Parte de nuestra vida es digital y debemos protegerla.
+> 
+
+## Seguridad informatica vs Ciberseguridad
+
+### Seguridad de la información
+
+La seguridad de la información se refiere a la protección de cualquier tipo de información, ya sea en formato digital o físico, para garantizar su confidencialidad, integridad y disponibilidad.
+
+- integridad: datos permanezcan sin cambios
+- confidencialidad: acceso solo a los usuarios autorizados
+- Disponibilidad: El activo debe estar siempre disponible
+
+### Seguridad informatica
+
+**La Seguridad Informática es la disciplina que se encarga de  proteger la integridad y la privacidad de la información almacenada en el sistema informático** de cibercriminales, cuyos objetivos son obtener ganancias de la información adquirida o acceder a ella.
+
+Es decir, la función de la Seguridad Informática consiste en la **gestión de riesgos relacionados con el uso, el procesamiento, el almacenamiento y la transmisión de información o datos, y con los sistemas y procesos empleados** en la realización de dichas actividades.
+
+### Ciberseguridad
+
+Conjunto de medidas para prevenir, detectar, corregir y responder contra personas, procesos y tecnología que puedan comprometer los activos de información.
+
+💡Por lo tanto, la seguridad informática engloba todas las formas de protección de la información, incluyendo la protección lógica y física. La seguridad informática se enfoca en proteger los sistemas de información, mientras que la ciberseguridad se centra en la protección de la información en el entorno digital.
+
+| Ciberseguridad | Seguridad Informatica |
+| --- | --- |
+| Protege la informacion exlusivamente de formato digital |  Protege la información en todos los estados y formas en las que se presenta (digital, fisico o en forma de idea). |
+| Plantea estrategias ofensivas y defensivas para evitar que las amenazas se materialicen | Se enfoca en las medidas defensivas para reducir el riesgo. |
+| Protege activos de información esten o no interconectados. | Protege solo sistemas interconectados. |
+| Todos los empleados participan. | Solo involucra departamentos determinados TI |
+| Utiliza metodos herramientas y tecnologías que cambian constantemente | Se basa en normas especificas como los de la ISO27001 |
+
+## Activos de información
+
+Cualquier elemento tangible o intangible que tiene valor para la empresa; equipos, software, documentación y personas.
+
+Activos de información:
+
+- Datos personales.
+- Datos de la organización.
+- Dispositivos informaticos: almacenan, transportan y generan datos.
+- Software.
+- Documentación.
+
+> Los dispositivos pueden ser remplazados, sin embargo la información no se recupera. La unica esperanza son las copias de seguridad y el almacenamiento redundante.
+> 
+
+## Politicas de seguridad
+
+Conjunto de lineamientos y procedimientos diseñados para proteger datos confidenciales y garantizar la seguridad de la información. 
+
+Ejemplo de politicas
+
+- Se deben renovar las contraseñas de acceso cada 60 días.
+- Implementar circuito cerrado dentro y fuera del C.P.D. (centro de procesamiento de datos)
+- Se debe asignar roles de administrador en sistemas y DB únicamente al jefe de desarrollo.
+- Queda prohibido el uso de dispositivos de almacenamiento masivo en la empresa.
+
+Las políticas deben ser bien planificadas y no exageradas
+
+Ejemplo: Contraseña de más de 20 caracteres, esta será siempre anotada de forma física debido a la complejidad de recordar una contraseña tan grande.
+
+![Policy](imgs/Policy.png)
+
+Gobierno electronico: Uso de tecnologías de la información y la comunicación (TIC) para proporcionar servicios gubernamentales a entidades de manera eficiente. El Gobierno Electrónico puede mejorar la seguridad al proporcionar sistemas más eficientes y transparentes, pero no es una solución única. 
+
+# Ciberatacantes
+
+> “Conoce a tu oponente” -Sun Tzu.
+> 
+
+¿Quién es el enemigo? 🤔
+
+- Script Kiddies: Personas aficionadas que usan herramientas existentes.
+- Hackers: Poseen conocimientos amplios de sistemas computacionales y de la información. Se pueden subclasificar en: sombrero blanco (acciones eticas), sombrero negro (acciones en su beneficio) y sombrero gris (un punto intermedio, puede realizar acciones consideradas maliciosas vulnerando sistemas pero con permisos previos).
+- Hackers organizados.
+
+Otros peligros a los activos de información:
+
+- Empleado renegado.
+- Empleado de avanzada edad.
+- Empleado distraido.
+
+> Hacker: Persona experta en el manejo de computadoras, que se ocupa de la seguridad de los sistemas y de desarrollar técnicas de mejora.
+> 
+
+> Cracker: Pirata informatico.
+> 
+
+¿ Quíen es el encargado de la seguridad de la información en una institución ? 🤔
+
+## CISO (chief information segurity officer)
+
+Oficial de seguridad de la información, encargado de supervisar y dirigir estrategias de seguridad cibernetica en una institución.
+
+Certificaciones:
+
+![ciso](imgs/ciso.png)
+
+## CSIRT (Computer Security Incident Response Team)
+
+Es un equipo encargado de responder y gestionar incidentes de seguridad informática dentro de una organización o entidad. Su función principal es coordinar las actividades de respuesta a incidentes, investigar y analizar los eventos de seguridad, y tomar medidas para mitigar y resolver los problemas identificados.
+![lacnic_scirt](imgs/lacnincsirt.png)
+![scirt](imgs/csirt.png)
+
+### lacnicscirt
+
+!https://blog.lacnic.net/wp-content/uploads/2023/12/fig1-red-sensores-honeynet.png
+
+!https://live.staticflickr.com/65535/50690362523_ff68f63181_o_d.png
+
+## Cuestiones legales en Bolivia
+
+Algunas agencias de las mas relevantes que se encargan de la gestion de la informacion son:
+
+![csirt_lacnic](imgs/bolivia_csirt.png)
+Respecto al Decreto Supremo 2514 de 9 de septiembre de 2015
+
+Artículo 17. Obligaciones en materia de seguridad informática
+
+I. Los responsables de seguridad informática de todas las entidades del sector público deben reportar la ocurrencia de incidentes informáticos que se produzcan en un plazo no mayor a veinticuatro (24) horas después de conocer el hecho al CGII para contener, corregir, recuperar los servicios afectados y/o alertar al resto de las entidades del sector público, de acuerdo con los procedimientos establecidos por el CGII.
+
+II. Las entidades públicas en las que ocurra un incidente informático deberán proporcionar la información necesaria al CGII respecto a los incidentes informáticos ocurridos, conforme a los procedimientos a ser establecidos por el CGII.
+
+III. Las entidades del sector público deberán desarrollar el Plan Institucional de Seguridad de la Información acorde a los lineamientos establecidos por el CGII.
+
+### Codigo penal Boliviano - 2019
+
+Capitulo XI
+
+Delitos informaticos
+
+Articulos 363 bis.- (Manipulacion informatica).- E que con la intencion de obtener un beneficio indebido para sí o un tercero, manipule un procesamiento o transferencia de datos informaticos que produzca a u resultado incorrecto o evite un proceso tal cuyo resultado habrñia sido correcto, ocasionando de esta manera una transferencia patrimonial en prejucio de tercero, serña sancionado con reclusión de uno a cinco años y una multa de sesenta a doscientos días.
+
+Articulo 363 ter.- (Alteración, acceso y uso indebido de datos informáticos).-  El que sin estar autorizado se apodere, acceda, utilice, modifique suprima o inutilice, datos almacenados en una computadora o en cualquier soporte informatico, ocasionando prejuicio al titular de la información, será sancionado con prestación de trabajo hasta un año o multa hasta doscientos días.
+
+## Principios de la ciberseguridad
+
+- Confidencialidad: La informacion solo debe ser utlizada por la entidad autorizada. Tiene 3 aspectos:
+    - Autenticacion: usuario es quien dice ser
+    - Autorización:  el usuario tiene permisos para ciertas acciones
+    - Cifrado: informacion: la informacion capturada sera inutil para cualquiera que no haya superado la autenticación.
+- Integridad: que los datos no sean alterados.
+- Disponibilidad: Activos de información disponibles el mayor tiempo posible (se debe tomar en cuenta el sobredimensionamiento de los recursos ej: dispositivos de replica, instalaciones alternas CPD)
+- No repudio: Evita que una de las partes implicadas en un incidente se niege a tomar sus responsabilidades.
+    
+    ej una transaccion bancaria en la que participaron desde el cajero hasta el usuario

